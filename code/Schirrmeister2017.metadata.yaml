@@ -1,0 +1,300 @@
+_dataset:
+  class: Schirrmeister2017
+  code: Schirrmeister2017
+  doi: 10.1002/hbm.23730
+  interval:
+  - 0
+  - 4
+  n_subjects: 14
+  paradigm: imagery
+abstract: Deep learning with convolutional neural networks (deep ConvNets) has revolutionized computer vision through end-to-end
+  learning. This study investigates deep ConvNets for end-to-end EEG decoding of imagined or executed movements from raw EEG.
+  Results show that recent advances including batch normalization and exponential linear units, together with a cropped training
+  strategy, boosted decoding performance to match or exceed FBCSP (82.1% FBCSP vs 84.0% deep ConvNets). Novel visualization
+  methods demonstrated that ConvNets learned to use spectral power modulations in alpha, beta, and high gamma frequencies
+  with meaningful spatial distributions.
+acquisition:
+  channel_types:
+    eeg: 128
+  line_freq: 50.0
+  montage: standard_1005
+  n_channels: 128
+  sampling_rate: 500.0
+  sensor_type: EEG
+  sensors:
+  - Fp1
+  - Fp2
+  - Fpz
+  - F7
+  - F3
+  - Fz
+  - F4
+  - F8
+  - FC5
+  - FC1
+  - FC2
+  - FC6
+  - M1
+  - T7
+  - C3
+  - Cz
+  - C4
+  - T8
+  - M2
+  - CP5
+  - CP1
+  - CP2
+  - CP6
+  - P7
+  - P3
+  - Pz
+  - P4
+  - P8
+  - POz
+  - O1
+  - Oz
+  - O2
+  - AF7
+  - AF3
+  - AF4
+  - AF8
+  - F5
+  - F1
+  - F2
+  - F6
+  - FC3
+  - FCz
+  - FC4
+  - C5
+  - C1
+  - C2
+  - C6
+  - CP3
+  - CPz
+  - CP4
+  - P5
+  - P1
+  - P2
+  - P6
+  - PO5
+  - PO3
+  - PO4
+  - PO6
+  - FT7
+  - FT8
+  - TP7
+  - TP8
+  - PO7
+  - PO8
+  - FT9
+  - FT10
+  - TPP9h
+  - TPP10h
+  - PO9
+  - PO10
+  - P9
+  - P10
+  - AFF1
+  - AFz
+  - AFF2
+  - FFC5h
+  - FFC3h
+  - FFC4h
+  - FFC6h
+  - FCC5h
+  - FCC3h
+  - FCC4h
+  - FCC6h
+  - CCP5h
+  - CCP3h
+  - CCP4h
+  - CCP6h
+  - CPP5h
+  - CPP3h
+  - CPP4h
+  - CPP6h
+  - PPO1
+  - PPO2
+  - I1
+  - Iz
+  - I2
+  - AFp3h
+  - AFp4h
+  - AFF5h
+  - AFF6h
+  - FFT7h
+  - FFC1h
+  - FFC2h
+  - FFT8h
+  - FTT9h
+  - FTT7h
+  - FCC1h
+  - FCC2h
+  - FTT8h
+  - FTT10h
+  - TTP7h
+  - CCP1h
+  - CCP2h
+  - TTP8h
+  - TPP7h
+  - CPP1h
+  - CPP2h
+  - TPP8h
+  - PPO9h
+  - PPO5h
+  - PPO6h
+  - PPO10h
+  - POO9h
+  - POO3h
+  - POO4h
+  - POO10h
+  - OI1h
+  - OI2h
+  software: BCI2000
+bci_application:
+  applications:
+  - motor_control
+  environment: laboratory
+cross_validation:
+  cv_method: holdout
+  evaluation_type:
+  - within_subject
+data_structure:
+  n_blocks: 13
+  n_trials:
+    test_set: 160
+    total_per_subject: 963
+    training_set: 880
+  n_trials_per_class:
+    per_class_per_subject: 260
+  trials_context: 13 runs per subject, 80 trials per run (4 seconds each), 3-4 seconds inter-trial interval, pseudo-randomized
+    presentation with all 4 classes shown every 4 trials
+documentation:
+  acknowledgements: Funded by BrainLinks-BrainTools Cluster of Excellence (DFG, EXC1086) and the Federal Ministry of Education
+    and Research (BMBF, Motor-BIC 13GW0053D).
+  contact_info:
+  - robin.schirrmeister@uniklinik-freiburg.de
+  country: DE
+  data_url: https://web.gin.g-node.org/robintibor/high-gamma-dataset/
+  doi: 10.1002/hbm.23730
+  ethics_approval:
+  - Approved by the ethical committee of the University of Freiburg
+  funding:
+  - BrainLinks-BrainTools Cluster of Excellence (DFG) EXC1086
+  - Federal Ministry of Education and Research (BMBF) Motor-BIC 13GW0053D
+  how_to_acknowledge: 'Please cite: Schirrmeister et al. (2017). Deep learning with convolutional neural networks for EEG
+    decoding and visualization. Human Brain Mapping, 38(11), 5391-5420. https://doi.org/10.1002/hbm.23730'
+  institution: University of Freiburg
+  institution_address: Engelberger Str. 21, Freiburg 79106, Germany
+  institution_department: Translational Neurotechnology Lab, Epilepsy Center, Medical Center
+  investigators:
+  - Robin Tibor Schirrmeister
+  - Jost Tobias Springenberg
+  - Lukas Dominique Josef Fiederer
+  - Martin Glasstetter
+  - Katharina Eggensperger
+  - Michael Tangermann
+  - Frank Hutter
+  - Wolfram Burgard
+  - Tonio Ball
+  keywords:
+  - electroencephalography
+  - EEG analysis
+  - machine learning
+  - end-to-end learning
+  - brain-machine interface
+  - brain-computer interface
+  - model interpretability
+  - brain mapping
+  license: CC-BY-4.0
+  publication_year: 2017
+  repository: GitHub
+  senior_author: Tonio Ball
+experiment:
+  class_labels:
+  - right_hand
+  - left_hand
+  - rest
+  - feet
+  events:
+    feet: 4
+    left_hand: 2
+    rest: 3
+    right_hand: 1
+  has_training_test_split: true
+  instructions: Subjects performed repetitive movements at their own pace when arrow was showing
+  mode: offline
+  n_classes: 4
+  paradigm: imagery
+  primary_modality: visual
+  stimulus_modalities:
+  - visual
+  stimulus_presentation:
+    direction_mapping: downward=feet, leftward=left_hand, rightward=right_hand, upward=rest
+    type: gray arrow on black background
+  stimulus_type: visual
+  study_design: Executed movements including left hand (sequential finger-tapping), right hand (sequential finger-tapping),
+    feet (repetitive toe clenching), and rest conditions
+  synchronicity: cue-based
+  trial_duration: 4.0
+file_format: EDF
+methodology: End-to-end deep learning approach comparing shallow ConvNets, deep ConvNets, and ResNets against FBCSP baseline.
+  Evaluated design choices including batch normalization, exponential linear units, dropout, and cropped training strategies.
+  Novel visualization techniques developed to understand learned features and verify that ConvNets use spectral power modulations
+  in task-relevant frequency bands.
+paradigm_specific:
+  detected_paradigm: motor_imagery
+  imagery_tasks:
+  - left_hand_finger_tapping
+  - right_hand_finger_tapping
+  - feet_toe_clenching
+  - rest
+participants:
+  age_mean: 27.2
+  age_std: 3.6
+  gender:
+    female: 6
+    male: 8
+  handedness:
+    left: 2
+    right: 12
+  health_status: healthy
+  n_subjects: 14
+  species: homo sapiens
+performance:
+  Deep_ConvNet_accuracy_percent: 89.3
+  FBCSP_accuracy_percent: 91.2
+  Shallow_ConvNet_accuracy_percent: 92.5
+runs_per_session: 2
+sessions_per_subject: 1
+signal_processing:
+  classifiers:
+  - Deep ConvNet
+  - Shallow ConvNet
+  - ResNet
+  - FBCSP with LDA
+  feature_extraction:
+  - FBCSP
+  - CSP
+  - Bandpower
+  - Spectral power modulations
+  frequency_bands:
+    alpha:
+    - 7.0
+    - 13.0
+    beta:
+    - 13.0
+    - 30.0
+    gamma:
+    - 30.0
+    - 100.0
+  spatial_filters:
+  - CSP
+tags:
+  modality:
+  - Motor
+  pathology:
+  - Healthy
+  type:
+  - Motor Imagery
+  - Motor Execution
