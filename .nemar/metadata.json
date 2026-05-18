@@ -1,0 +1,135 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "validated",
+  "authors": {
+    "Robin Tibor Schirrmeister": {
+      "orcid": "0000-0002-5518-7445",
+      "affiliations": [
+        {
+          "name": "Translational Neurotechnology Lab, Epilepsy Center, Medical Center - University of Freiburg, Engelberger Str. 21; Freiburg 79106 Germany"
+        },
+        {
+          "name": "BrainLinks-BrainTools Cluster of Excellence, University of Freiburg, Georges-Köhler-Allee 79; Freiburg 79110 Germany"
+        }
+      ]
+    },
+    "Jost Tobias Springenberg": {},
+    "Lukas Dominique Josef Fiederer": {
+      "orcid": "0000-0003-1803-9694",
+      "affiliations": [
+        {
+          "name": "Translational Neurotechnology Lab, Epilepsy Center, Medical Center - University of Freiburg, Engelberger Str. 21; Freiburg 79106 Germany"
+        },
+        {
+          "name": "BrainLinks-BrainTools Cluster of Excellence, University of Freiburg, Georges-Köhler-Allee 79; Freiburg 79110 Germany"
+        },
+        {
+          "name": "Neurobiology and Biophysics; Faculty of Biology, University of Freiburg, Hansastr. 9a; Freiburg 79104 Germany"
+        }
+      ]
+    },
+    "Martin Glasstetter": {},
+    "Katharina Eggensperger": {},
+    "Michael Tangermann": {},
+    "Frank Hutter": {},
+    "Wolfram Burgard": {},
+    "Tonio Ball": {
+      "orcid": "0000-0002-4993-466X",
+      "affiliations": [
+        {
+          "name": "Translational Neurotechnology Lab, Epilepsy Center, Medical Center - University of Freiburg, Engelberger Str. 21; Freiburg 79106 Germany"
+        },
+        {
+          "name": "BrainLinks-BrainTools Cluster of Excellence, University of Freiburg, Georges-Köhler-Allee 79; Freiburg 79110 Germany"
+        }
+      ]
+    }
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.1002/hbm.23730",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000172",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000172",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1038/s41597-019-0104-8",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "DFG",
+      "award_number": "EXC1086",
+      "award_title": "BrainLinks-BrainTools Cluster of Excellence"
+    },
+    {
+      "funder_name": "BMBF",
+      "award_number": "13GW0053D",
+      "award_title": "Motor-BIC"
+    }
+  ],
+  "title": "High-gamma dataset described in Schirrmeister et al. 2017",
+  "license": "CC-BY-4.0",
+  "dataset_type": "derivative",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "19.9 GB (31 files)"
+  ],
+  "formats": [
+    ".bdf",
+    ".html",
+    ".json",
+    ".md",
+    ".tsv",
+    ".yaml",
+    ".yml"
+  ],
+  "description": "A high-gamma EEG dataset comprising 14 healthy subjects performing motor imagery tasks (left hand, right hand, feet, and rest) recorded at 500 Hz with 128 channels. This derivative dataset was used to develop and validate deep convolutional neural networks for end-to-end EEG decoding, demonstrating that deep learning approaches can match or exceed traditional feature-based methods (FBCSP) while learning interpretable spectral power modulations in alpha, beta, and high-gamma frequency bands.",
+  "methods_description": "EEG data were acquired at 500 Hz sampling rate using 128 channels arranged in the standard 1005 montage via BCI2000 software. Subjects performed four motor imagery tasks (left hand sequential finger-tapping, right hand sequential finger-tapping, feet toe clenching, and rest) cued by visual arrows on a black background. Each trial lasted 4 seconds with 3-4 seconds inter-trial intervals. Data were processed using deep convolutional neural networks, shallow ConvNets, ResNets, and FBCSP with LDA classifiers, with evaluation of spectral features in alpha (7-13 Hz), beta (13-30 Hz), and gamma (30-100 Hz) bands using common spatial pattern filtering.",
+  "keywords": [
+    {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "motor imagery"
+    },
+    {
+      "term": "deep learning"
+    },
+    {
+      "term": "brain-computer interfaces"
+    },
+    {
+      "term": "convolutional neural networks"
+    },
+    {
+      "term": "EEG decoding"
+    },
+    {
+      "term": "feature visualization"
+    }
+  ],
+  "source_hash": "7d29cd94360d1764b173d5a575f09b1ecab11e2e485a311f72ad7148ed2d8432"
+}
