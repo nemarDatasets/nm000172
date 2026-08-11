@@ -1,6 +1,11 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
+  "pipeline_stage": "enriched",
+  "title": "High-gamma dataset described in Schirrmeister et al. 2017",
+  "description": "A high-gamma EEG dataset comprising 14 healthy subjects performing motor imagery tasks (left hand, right hand, feet, and rest) recorded at 500 Hz with 128 channels. This derivative dataset was used to develop and validate deep convolutional neural networks for end-to-end EEG decoding, demonstrating that deep learning approaches can match or exceed traditional feature-based methods (FBCSP) while learning interpretable spectral power modulations in alpha, beta, and high-gamma frequency bands.",
+  "methods_description": "EEG data were acquired at 500 Hz sampling rate using 128 channels arranged in the standard 1005 montage. Subjects performed four motor imagery tasks (left hand sequential finger-tapping, right hand sequential finger-tapping, feet toe clenching, and rest) cued by visual arrows. Each session contained 2 runs with 13 blocks per run, totaling 80 trials per run (4-second trial duration, 3-4 second inter-trial intervals). Deep learning models (shallow ConvNets, deep ConvNets, ResNets) were compared against FBCSP baseline using within-subject holdout cross-validation with cropped training strategies.",
+  "license": "CC-BY-4.0",
+  "dataset_type": "derivative",
   "authors": {
     "Robin Tibor Schirrmeister": {
       "orcid": "0000-0002-5518-7445",
@@ -45,6 +50,52 @@
       ]
     }
   },
+  "keywords": [
+    {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "motor imagery",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D019545"
+    },
+    {
+      "term": "deep learning"
+    },
+    {
+      "term": "convolutional neural networks",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D016571"
+    },
+    {
+      "term": "brain-computer interfaces",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D001931"
+    },
+    {
+      "term": "EEG decoding"
+    },
+    {
+      "term": "feature visualization"
+    },
+    {
+      "term": "EEG analysis"
+    },
+    {
+      "term": "end-to-end learning"
+    },
+    {
+      "term": "brain-machine interface"
+    },
+    {
+      "term": "model interpretability"
+    },
+    {
+      "term": "brain mapping"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.1002/hbm.23730",
@@ -57,11 +108,6 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000172",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.21105/joss.01896",
       "identifier_type": "DOI",
       "relation_type": "References"
@@ -70,6 +116,11 @@
       "identifier": "10.1038/s41597-019-0104-8",
       "identifier_type": "DOI",
       "relation_type": "References"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000172",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
@@ -84,19 +135,17 @@
       "award_title": "Motor-BIC"
     }
   ],
-  "title": "High-gamma dataset described in Schirrmeister et al. 2017",
-  "license": "CC-BY-4.0",
-  "dataset_type": "derivative",
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "19.9 GB (31 files)"
+    "33.6 GB (59 files)"
   ],
   "formats": [
     ".bdf",
+    ".edf",
     ".html",
     ".json",
     ".md",
@@ -104,32 +153,5 @@
     ".yaml",
     ".yml"
   ],
-  "description": "A high-gamma EEG dataset comprising 14 healthy subjects performing motor imagery tasks (left hand, right hand, feet, and rest) recorded at 500 Hz with 128 channels. This derivative dataset was used to develop and validate deep convolutional neural networks for end-to-end EEG decoding, demonstrating that deep learning approaches can match or exceed traditional feature-based methods (FBCSP) while learning interpretable spectral power modulations in alpha, beta, and high-gamma frequency bands.",
-  "methods_description": "EEG data were acquired at 500 Hz sampling rate using 128 channels arranged in the standard 1005 montage via BCI2000 software. Subjects performed four motor imagery tasks (left hand sequential finger-tapping, right hand sequential finger-tapping, feet toe clenching, and rest) cued by visual arrows on a black background. Each trial lasted 4 seconds with 3-4 seconds inter-trial intervals. Data were processed using deep convolutional neural networks, shallow ConvNets, ResNets, and FBCSP with LDA classifiers, with evaluation of spectral features in alpha (7-13 Hz), beta (13-30 Hz), and gamma (30-100 Hz) bands using common spatial pattern filtering.",
-  "keywords": [
-    {
-      "term": "Electroencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
-    },
-    {
-      "term": "motor imagery"
-    },
-    {
-      "term": "deep learning"
-    },
-    {
-      "term": "brain-computer interfaces"
-    },
-    {
-      "term": "convolutional neural networks"
-    },
-    {
-      "term": "EEG decoding"
-    },
-    {
-      "term": "feature visualization"
-    }
-  ],
-  "source_hash": "7d29cd94360d1764b173d5a575f09b1ecab11e2e485a311f72ad7148ed2d8432"
+  "source_hash": "8399a2640145256f409d10a50634142be452c8d3432a35ffeebdf2cd54fa147e"
 }
