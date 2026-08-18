@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "High-gamma dataset described in Schirrmeister et al. 2017",
-  "description": "A high-gamma EEG dataset comprising 14 healthy subjects performing motor imagery tasks (left hand, right hand, feet, and rest) recorded at 500 Hz with 128 channels. This derivative dataset was used to develop and validate deep convolutional neural networks for end-to-end EEG decoding, demonstrating that deep learning approaches can match or exceed traditional feature-based methods (FBCSP) while learning interpretable spectral power modulations in alpha, beta, and high-gamma frequency bands.",
-  "methods_description": "EEG data were acquired at 500 Hz sampling rate using 128 channels arranged in the standard 1005 montage. Subjects performed four motor imagery tasks (left hand sequential finger-tapping, right hand sequential finger-tapping, feet toe clenching, and rest) cued by visual arrows. Each session contained 2 runs with 13 blocks per run, totaling 80 trials per run (4-second trial duration, 3-4 second inter-trial intervals). Deep learning models (shallow ConvNets, deep ConvNets, ResNets) were compared against FBCSP baseline using within-subject holdout cross-validation with cropped training strategies.",
+  "description": "A high-gamma EEG dataset comprising 14 healthy subjects performing motor imagery tasks (left hand, right hand, feet, and rest) recorded at 500 Hz with 128 channels. This derivative dataset was used to develop and validate deep convolutional neural networks for end-to-end EEG decoding. Deep learning approaches demonstrated comparable performance to traditional feature-based methods (FBCSP), with Shallow ConvNets exceeding FBCSP performance (92.5% vs 91.2%), while learning interpretable spectral power modulations in alpha, beta, and high-gamma frequency bands.",
+  "methods_description": "EEG data were acquired at 500 Hz sampling rate using 128 channels arranged in the standard 1005 montage. Subjects performed cue-based motor imagery tasks (sequential finger-tapping for left/right hand, repetitive toe clenching for feet, and rest) in response to visual arrow stimuli. Each subject completed 13 runs with 80 trials per run (4-second trial duration, 3-4 second inter-trial intervals). Deep ConvNets, Shallow ConvNets, and ResNets were trained end-to-end on raw EEG data and compared against FBCSP with LDA baseline using within-subject cross-validation.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -57,28 +57,19 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     },
     {
-      "term": "motor imagery",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D019545"
+      "term": "motor imagery"
     },
     {
       "term": "deep learning"
     },
     {
-      "term": "convolutional neural networks",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D016571"
+      "term": "convolutional neural networks"
     },
     {
-      "term": "brain-computer interfaces",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D001931"
+      "term": "brain-computer interfaces"
     },
     {
       "term": "EEG decoding"
-    },
-    {
-      "term": "feature visualization"
     },
     {
       "term": "EEG analysis"
@@ -94,6 +85,9 @@
     },
     {
       "term": "brain mapping"
+    },
+    {
+      "term": "machine learning"
     }
   ],
   "related_identifiers": [
@@ -153,5 +147,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "8399a2640145256f409d10a50634142be452c8d3432a35ffeebdf2cd54fa147e"
+  "source_hash": "4e4881a0249e3920ff960eedf7a05775ce39d3494d4db6d7d25a499d23ae5bc8"
 }
